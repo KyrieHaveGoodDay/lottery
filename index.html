@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>解憂餅乾</title>
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+ 
+  <!--CSS-->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+  <link tpye="text/css" rel="stylesheet" href="css/allv0117.css">
+  
+</head>
+
+<body>
+ 
+
+
+  <!-- 開頭動畫 -->
+  <div class="loading_mask">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Main -->
+  <!-- <div style="height: 25px;"></div> -->
+  <div class="main">
+
+    <div class="game">
+
+      <!-- ie時 -->
+      <div class="ie-mask none">
+        <h3>建議您使用其他瀏覽器或行動裝置，<br>以取得更好的體驗</h3>
+      </div>
+
+      <!-- first -->
+      <div class="game__first">
+
+        <!-- title -->
+        <div class="game__first--title">
+          <!-- font -->
+          <div class=" title1 titleAll"><img src="img/title-top.png"></div>
+          <div class=" title2 titleAll"><img src="img/title-bom.png"></div>
+          <!-- <div class="title title3"><img src="img/title_main3.png"></div>
+          <div class="title title4"><img src="img/title_main4.png"></div> -->
+          <!-- item -->
+          <img class="chaco light1" src="img/light.png" alt="">
+          <img class="chaco light2" src="img/light.png" alt="">
+          <!-- <img class="chaco chaco1" src="img/title_chaco.png"> -->
+          <!-- <img class="chaco chaco2" src="img/title_chaco.png"> -->
+          <!-- <img class="heart" src="img/title_heart.png"> -->
+        </div>
+        <!-- End title -->
+
+        <!-- game buttons -->
+        <div class="game__first--btns">
+          <a href="javascript:;" class="col-7 btn__start"><img src="img/start.png"></a>
+          <!-- <a href="javascript:;" class="col-5 btn__info" data-toggle="modal" data-target="#instructions"><img src="img/btn_info.png"></a> -->
+        </div>
+        <!-- END buttons -->
+
+      </div>
+      <!--END first -->
+
+
+      <!--主要遊戲場景 -->
+      <div class="game__main">
+        <!-- 結果燈箱 -->
+        <div class="result">
+          <div class="result__inner">
+            <!-- 成功 -->
+            <div id="success" class="resultContent mb-3">
+              <img class="resultTitle" src="img/winTitle.png" alt="">
+              <div class="resultWin">
+                <div class="WinContent">
+                  <!-- 新年到好運到 -->
+                </div>
+              </div>
+            </div>
+            <!-- 失敗 -->
+            <div id="fail" class="resultContent">
+              <img class="resultTitle" src="img/otherTitle.png" alt="">
+              <div class="resultOther">
+                <div class="OtherContent">
+                  <!-- <div>燒燒香求康復</div>
+                  <div>燒燒香求康復</div>
+                  <div>燒燒香求康復</div> -->
+                </div>
+              </div>
+            </div>
+            <!-- API失敗 -->
+            <!-- <div class="resultContent">
+              <div class="resultOther">
+                <div class="OtherContent">
+                  <div>似乎發生不可預知的錯誤...</div>
+                </div>
+              </div>
+            </div> -->
+            <!-- API失敗 -->
+
+            
+          </div>
+        </div>
+        <!-- 餅乾打開 -->
+        <div class="open">
+          <img class="open-r" src="img/open_R.png">
+          <img class="open-l" src="img/open_L.png">
+        </div>
+        <!-- 黑底 -->
+        <div class="game__main--mask"></div>
+        <!-- 背景 -->
+        <div class="game__main--bg"><img src="img/main_bg2.png"></div>
+        <!-- 餅乾們 -->
+        <div class="cookie cookie1 pointer-none">
+          <div class="cookie__main"><img src="img/RedEnvelope.png"></div>
+        </div>
+        <div class="cookie cookie2 pointer-none">
+          <div class="cookie__main"><img src="img/RedEnvelope.png"></div>
+        </div>
+        <div class="cookie cookie3 pointer-none">
+          <div class="cookie__main"><img src="img/RedEnvelope.png"></div>
+        </div>
+        <div class="cookie cookie4 pointer-none">
+          <div class="cookie__main"><img src="img/RedEnvelope.png"></div>
+        </div>
+        
+      </div>
+      <!--END 主要遊戲場景 -->
+
+
+
+      <!-- 畫面底部 -->
+      <div class="game__footer">
+        <img src="img/footer.png" alt="">
+        <!-- <div class="col"><img src="img/footer_star.png"></div>
+        <a class="col d-block" id="ios" href="https://24h.m.pchome.com.tw/appget.php" target="_blank"><img src="img/ios.png"></a>
+        <a class="col d-block" id="android" href="https://24h.m.pchome.com.tw/appget.php" target="_blank"><img src="img/android.png"></a> -->
+      </div>
+
+
+    </div>
+    <!-- END game -->
+  </div>
+  <!-- END Main -->
+
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="instructions" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">遊戲說明</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li> 遊戲說明：<br>
+              最近煩惱多多，Every day is blue<br>
+              挑一個解憂餅乾，讓它給你力量和歡樂吧!
+            </li>
+            <li>注意事項：<br>
+              網路家庭國際資訊股份有限公司保留隨時修改、終止或變更本活動內容之權利。
+              修改後之活動內容將於本活動網頁中更新，恕不另行通知。</li>
+          </ul>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/gsap.min.js"></script>
+  <script type="text/javascript" src="js/CustomEase.min.js"></script>
+  <script type="text/javascript">
+    
+    
+  </script>
+  <script type="text/javascript" src="js/all0117.js"></script>
+</body>
+
+</html>
