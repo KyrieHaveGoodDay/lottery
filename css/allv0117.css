@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&family=Work+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;900&family=Work+Sans:wght@100&display=swap");
 .sidenav__btn::after {
   content: "";
   display: block;
@@ -1380,7 +1381,7 @@ body {
   text-align: center;
   position: relative;
   margin: 0 30px;
-  padding: 30px 80px;
+  padding: 15px 80px;
 }
 .resultContent .resultWin::before, .resultContent .resultOther::before {
   content: "";
@@ -1407,10 +1408,15 @@ body {
 .resultContent .WinContent, .resultContent .OtherContent {
   position: relative;
   z-index: 3;
-  font-size: 60px;
+  font-size: 35px;
   font-family: "Noto Sans SC", sans-serif;
   font-weight: bold;
   line-height: 70px;
+}
+@media screen and (max-width: 575.98px) {
+  .resultContent .WinContent, .resultContent .OtherContent {
+    font-size: 30px;
+  }
 }
 .resultContent .resultOther {
   padding: 30px 10px;
@@ -1422,4 +1428,19 @@ body {
 .resultContent .OtherContent {
   font-size: 26px;
   line-height: 40px;
+}
+
+.playAgain {
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  background: #fd9833;
+  color: #fff;
+  padding: 0 35px 5px;
+  margin-top: 50px;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+  cursor: pointer;
 }/*# sourceMappingURL=allv0117.css.map */

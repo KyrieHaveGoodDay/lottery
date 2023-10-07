@@ -46,12 +46,13 @@ $(function () {
     }, 700);
   })
 
+  // 再玩一次
+  $('.playAgain').on('click',function(){
+    location.reload();
+  })
+
   // 開始遊戲場景動畫
   function gameStart() {
-    // let objdata = resultData.length-1;
-    // console.log(resultData[objdata]);
-
-    // gsap.from($('.game__main--bg'), { duration: 2.5, scale: 0.6, ease: "power3.out", delay: 0.3 })
     $cookies.each(function () {
       let item = $(this);
       cookieAni(item);
