@@ -1383,6 +1383,11 @@ body {
   margin: 0 30px;
   padding: 15px 80px;
 }
+@media screen and (max-width: 575.98px) {
+  .resultContent .resultWin, .resultContent .resultOther {
+    padding: 15px 10vw;
+  }
+}
 .resultContent .resultWin::before, .resultContent .resultOther::before {
   content: "";
   background: #cf2127;
@@ -1415,7 +1420,7 @@ body {
 }
 @media screen and (max-width: 575.98px) {
   .resultContent .WinContent, .resultContent .OtherContent {
-    font-size: 30px;
+    font-size: 8vw;
   }
 }
 .resultContent .resultOther {
@@ -1443,4 +1448,9 @@ body {
           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   letter-spacing: 3px;
   cursor: pointer;
+}
+@media screen and (max-width: 575.98px) {
+  .playAgain {
+    margin-top: 8vw;
+  }
 }/*# sourceMappingURL=allv0117.css.map */

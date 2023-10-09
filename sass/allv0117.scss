@@ -572,7 +572,9 @@ body {
     position: relative;
     margin: 0 30px;
     padding: 15px 80px;
-    
+    @include media($mobile) {
+      padding: 15px 10vw;
+    }
     &::before{
       content: '';
       background: #cf2127;
@@ -606,7 +608,7 @@ body {
     font-weight: bold;
     line-height: 70px;
     @include media($mobile) {
-     font-size: 30px
+     font-size: 8vw
     }
 
   }
@@ -637,5 +639,7 @@ body {
   box-shadow: 4px 4px 10px rgba(#000,0.3);
   letter-spacing: 3px;
   cursor: pointer;
-
+  @include media($mobile) {
+    margin-top: 8vw;
+  }
 }
